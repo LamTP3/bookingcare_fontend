@@ -1,0 +1,81 @@
+.doctor-detail-container {
+  .intro-doctor {
+    display: flex;
+    height: 150px;
+    margin-left: 100px;
+
+    .content-left {
+      width: 30%;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin: 10px 20px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .content-right {
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      padding-left: 10px;
+
+      .up {
+        padding-top: 10px;
+        font-size: 25px;
+        font-weight: 600;
+      }
+
+      .down {
+        padding-top: 10px;
+        .like-share-plugin {
+          margin: 10px 0 20px 0;
+        }
+      }
+    }
+  }
+
+  .schedule-doctor {
+    margin-left: 100px;
+    display: flex;
+    @media screen and(max-width: 900px) {
+      height: auto;
+    }
+    .content-left {
+      width: 50%;
+      border-right: 1px solid #ddd;
+    }
+    .content-right {
+      margin: 20px 0px 0px 15px;
+      width: 50%;
+    }
+  }
+  .detail-infor-doctor {
+    margin-top: 10px;
+    padding: 20px 100px;
+    background-color: #f9f9f9;
+    img {
+      width: 100%;
+    }
+  }
+
+  .comment-doctor {
+    padding: 10px 100px;
+  }
+
+  @media screen and (max-width: 775px) {
+    .intro-doctor {
+      margin-left: 0px;
+    }
+  }
+  @media screen and (max-width: 775px) {
+    .detail-infor-doctor {
+      margin-top: 25px;
+      padding: 20px 30px;
+    }
+    .schedule-doctor {
+      margin-left: 0px;
+      padding: 30px 0px 0px 30px;
+    }
+  }
+}

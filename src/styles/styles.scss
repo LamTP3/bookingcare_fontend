@@ -1,0 +1,16 @@
+@import "variables";
+
+body,
+html {
+  overflow: hidden;
+}
+// code dùng để ghi đè css của thư viện
+// react loading overlay
+// với mục đích cho spin của thư viện luôn đè trên
+// layout của app react
+div._loading_overlay_wrapper {
+  position: unset;
+  ._loading_overlay_overlay {
+    z-index: 10000;
+  }
+}
